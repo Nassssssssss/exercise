@@ -1,0 +1,13 @@
+git status     查看文件状态
+
+git add *      添加到git目录
+
+git commit -m "项目描述" 提交到本地厂库
+
+git push       提交到远程厂库
+
+git log        查看提交日志
+
+git push -u origin master
+
+- 推送到名称为 origin 远程仓库地址下的 master 分支下

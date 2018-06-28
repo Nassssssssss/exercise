@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 1、 定义Number、string、boolean类型变量，并在控制台输出值,同时在控制台输出其类型
+        // var num = 13;
+        // console.log (num);
+        // console.log (typeof num);
+        // var str = "xiaokeai"
+        // console.log (str);
+        // console.log(typeof str);
+        // var boo = true ;
+        // console.log (boo);
+        // console.log (typeof boo);
+    // 2、 代码演示parseInt()和parseFloat的区别，变量.toString()、string(变量)的区别，并在注释中说出其不同
+            // var num = 5.5;
+            // console.log( parseInt(num));
+            // console.log(parseFloat(num));
+            // var demo = null;
+            // console.log (demo.toString());   //会报错
+            // console.log (String(demo));      //null
+
+    // 3、 var num = 20;  
+	//  console.log( !(num-3*2) || 12/3<=4 && 2*3>=6 || 12!==4); 不在控制台输出的情况下，说出打印的结果
+            // true
+    // 4、 用户输入任意数字，在控制台输出的结果是该数字与12的和(prompt("请请输入数字");)
+        //   var demo= (prompt("请请输入数字"))
+        //   console.log(typeof(demo)) 
+        //   var num=(Number(demo)) + 12
+        //   console.log(num)
+        var demo = prompt("请输入数字")
+        console.log(demo)                  //获取数字
+        console.log(typeof demo)           //查看类型
+        var num=  Number(demo)             //转换类型
+        console.log(num)                   //查看数值
+        var demo1= num+12                  //计算数值
+        console.log(demo1)                 //得出数值
+    
+    // 5、 写代码说明  “=”  “==”  “===”     之间的区别，在注释中说明不同
+        //    var demo1=2;
+        //    var demo2=3;
+        //    var demo3=demo1+demo2;
+        //    console.log (demo3);           //用于运算符
+            //   var demo4=10;
+            //   var demo5="10";
+            //   console.log (demo4==demo5);    //  数值相等,但是类型不相等
+                    // var demo6= "nihao";
+                    // var demo7= "nihao";
+                    // console.log(demo6===demo7)  // 数值相信,类型必须也要相信
+    </script>
+
+</body>
+</html>

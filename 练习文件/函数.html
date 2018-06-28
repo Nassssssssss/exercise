@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //      //1求三个值 最大值
+        //      function getMax(x,y,z) {
+        //         return x > y ? ( x > z ? x : z ) : ( y > z ? y : z )
+        //      }console.log(getMax(5,6,7))
+        //2判断一个数是不是质数
+        // function getPrime(x){
+        //     for (var i=2;i<x;i++){
+        //         if(x%i==0){
+        //             return false;
+        //         }
+        //     }return true;
+        // }console.log(getPrime(17)?'这是一个质数':'这不是一个质数')
+        // var num=getPrime(17)
+        // if(num){
+        //     console.log('是一个质数')
+        // }else {
+        //     console.log('不是一个质数')
+        //}
+        //3求俩个数的差
+        // function getSub (x,y) {
+        //    return x-y
+        // }console.log(getSub(20,10))
+        //4求一组数的最大值
+        // function getMax(arr) {
+        //     var num=arr[0];
+        //     for(var i=1;i<arr.length;i++) {
+        //         if(num<arr[i]) {
+        //             num=arr[i]
+        //         }
+        //     }   return num
+        // } console.log(getMax([5,8,7,6,2,4,9]))
+        //5求一组数的最小值
+        //  function getMin(arr){
+        //      var num=arr[0]
+        //      for (var i=1;i<arr.length;i++){
+        //          if (num>arr[i]){
+        //              num=arr[i]
+        //          }
+        //      }return num
+        //  }console.log(getMin([5,9,8,7,6,1,3]))
+        //6求一组数组的和
+        // function getSum(arr){
+        //     var sum=0
+        //     for(var i=0;i<arr.length;i++){
+        //         sum+=arr[i]
+        //     }return sum
+        // }console.log(getSum([1,2,3,4,5,6,7,8,9]))
+        //7通过函数实现数组翻转
+        // function getOver(arr){
+        //     var arrs=[];
+        //     for (var i=arr.length-1;i>=0;i--){
+        //         arrs[arrs.length]=arr[i]
+        //     }return arrs
+        // }console.log(getOver([9,8,7,6,5,4,3,2,1]))
+        //8通过函数实现冒泡排序
+        // function getMp(arr) {
+        //     var num = [];
+        //     for (var i = 0; i < arr.length - 1; i++) {
+        //         for (var j = 0; j < arr.length - 1 - i; j++) {
+        //             if (arr[j] > arr[j + 1]) {
+        //                 num = arr[j]
+        //                 arr[j] = arr[j + 1]
+        //                 arr[j + 1] = num
+        //             }
+        //         }
+        //     } return arr
+        // } console.log(getMp([9, 8, 7, 6, 5, 4, 3, 2, 1]))
+        //9求一个数组的最大值最小值还有和    
+        // function getMaxMinSum(arr) {
+        //     var max = arr[0];
+        //     var min = arr[0];
+        //     var sum = 0;
+        //     for (var i = 0; i < arr.length; i++) {
+        //         sum += arr[i]
+        //         if (max < arr[i]) {
+        //             max = arr[i]
+        //         } if (min > arr[i]) {
+        //             min = arr[i]
+        //         } //end if
+        //     } var arrs = [max, min, sum]
+        //     return arrs
+        // } var num = getMaxMinSum([1, 2, 3, 4, 5, 6, 7])
+        // console.log('最大值为' + num[0])
+        // console.log('最小值为' + num[1])
+        // console.log('数组和为' + num[2])
+        //10求一个数字的阶乘
+        // function getOver(x){
+        //     var jieC=1;
+        //     for(var i=1;i<=x;i++){
+        //         jieC=jieC*i
+        //     }return jieC
+        // }console.log(getOver(5))
+        //11斐波那契数列
+        // function getShuLie(x) {
+        //     var no1 = 1;
+        //     var no2 = 1;
+        //     var no3 = 0;
+        //     for (var i = 3; i <= x; i++) {
+        //         no3 = no1 + no2
+        //         no1 = no2;
+        //         no2 = no3;
+        //     } return no3
+        // } console.log(getShuLie(6))    
+        //12 说出年月日并说出这是这一年的第几天
+        // function getDays(year, mon, day) {
+        //     var days = day;
+        //     function isYear(year) {
+        //         return year % 4 == 0 && year % 100 !== 0 || year % 400 == 0
+        //     }
+        //     if (mon == 1) {
+        //         days = day
+        //         return days
+        //     }
+        //     var mons = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+        //     for (var i = 0; i < mon - 1; i++) {
+        //         days += mons[i];
+        //     }
+        //     if (isYear(year) && mon > 2) {
+        //         days++
+        //     } return days
+        // } console.log(getDays(2000, 3, 10))
+        //13 求一个数的阶乘和
+        // function getJieC(x) {
+        //     var sub = 1;
+        //     for (var i = 1; i <= x; i++) {
+        //         sub *= i
+        //     } //end for
+        //     return sub
+        // }
+        // function getJieSum(z) {
+        //     var sum = 0;
+        //     for (var j = 1; j <= z; j++) {
+        //         sum += getJieC(j)
+        //     }//end for
+        //     return sum
+        // } console.log(getJieSum(5))
+        //  14  求N个数的和
+        // function f1() {
+        //     var sum = 0;
+        //     for (var i = 0; i < arguments.length; i++) {
+        //         sum += arguments[i]
+        //     } return sum
+        // } console.log(f1(1, 2, 3, 4, 5))
+        //////////////////////////////////////// Btring  Number Boolean undefined null
+        // function f1() {
+        //     console.log('你好')
+        // };
+        // f1();
+        // //f1 函数名里面是函数的代码i
+        // (function () {
+        //     console.log('出门注意安全')
+        // })();
+        // var f2 = function () {
+        //     console.log('下车请注意')
+        // };
+        // f2();
+         function f1(){
+            var num= 100
+            num+=50
+         };f1();
+    </script>
+
+</body>
+
+</html>

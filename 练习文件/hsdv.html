@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //俩值互换
+    //     var i=5;
+    //     var k=6;
+    //     var o;
+    //     o=i;
+    //     i=k;
+    //     k=o;
+    //    console.log(i,k)
+        // var i=5;
+        // var k=6;
+        // i=i+k;
+        // k=i-k;
+        // i=i-k;
+        // console.log(i,k)
+         //判断 ture&flase
+        // 4 >= 6 || '人' != '阿凡达' && !(12 * 2 == 144) && true
+        // flase  ||    ture    &&    ture    &&    true
+        // flase  ||   ture
+        // ture
+        // var num = 10;
+        // 5 == num / 2 && (2 + 2 * num).toString() === '22'
+        // ture   &&  ture
+        // ture
+        // var num= parseInt(pormpt('请输入数值'));
+          //求俩个值得最大值
+        // var demo1=20;
+        // var demo2=22;
+        // if(demo1>demo2) {
+        //     alert(demo1)
+        // }else {
+        //     alert(demo2)
+        // }
+            //求这个值是基数还是偶数
+        // var num= parseInt(prompt('请输入数值'))
+        // if (num%2===0) {
+        //     alert('这个数是偶数')
+        // }else {
+        //     alert('这个数是基数')
+        // }
+          //分数转换，把百分制转换成ABCDE
+        //   var num=parseInt(prompt('请输入数值'))
+        //   if(num<=100 && num>=90) {
+        //       alert('A')
+        //   }else if (num<90&&num>=80){
+        //       alert('B')
+        //   }else if (num<80&&num>=70){
+        //       alert('C')
+        //   }else if (num<70&&num>=60){
+        //       alert('D')
+        //   }else if (num<60) {
+        //       alert('E')
+        //   }else {
+        //       alert('回火星吧你!')
+        //   }
+        //     var sum =0;
+        // for (var i=1; i<=100;i++) {
+        //      if (i%7===0) {
+        //          console.log(i)
+        //      }
+             
+        // }
+        //    判断一个年份是闰年还是平年
+        //    闰年：能被4整除，但不能被100整除的年份 或者 能被400整除的年份
+            // var age=parseInt(prompt('请输入年份'))
+            // if (age % 4===0 && age % 100 !== 0 || age % 400===0) {
+            //     alert('这是一个闰年')
+            // }else {
+            //     alert('这是一个平年')
+            // }
+        //    判断一个人的年龄是否满18岁(是否成年)
+        // var age=parseInt(prompt('请输入年龄'))
+        // age >= 18 ? alert('可以看片了,兄得!') : alert('回家看毛和老鼠吧!')
+        // 从两个数中找最大值
+            // var no1= parseInt(prompt('输入数值'))
+            // var no2= parseInt(prompt('输入数值'))
+            // no1 > no2 ? alert('第一个值大'):alert ('第二个值大')
+        // var num=parseInt(prompt('请输入属性'))
+        // switch(num) {
+        //     case 1 :
+        //     alert('星期一')
+        //     break;
+        //     case 2 :
+        //     alert('星期二')
+        //     break;
+        //     case 3 :
+        //     alert('星期三')
+        //     break;
+        //     case 4 :
+        //     alert('星期四')
+        //     break;
+        //     case 5 :
+        //     alert('星期五')
+        //     break;
+        //     case 6 :
+        //     alert('星期六')
+        //     break;
+        //     case 7 :
+        //     alert('星期日')
+        //     break;
+        //     default :
+        //     alert('你是不是傻?')
+        //     break;
+        // }
+        // 打印100以内的奇数
+        // var i =0; 
+        // while(i<=100 ){
+        //     if (i%2!==0){
+        //     console.log (i)
+        //     }
+        //     i++
+        // }
+        // 打印100以内的奇数的和
+            //   var i=0;
+            //   var sum=0;
+            //   while(i<=100){
+            //       if(i%2!==0){
+            //           sum+=i
+            //       }
+            //       i++
+            //   }console.log(sum)
+            // 求100以内所有3的倍数的和
+            // var i=0;
+            // var sum=0;
+            // do{
+            //     if(i%3===0){
+            //         sum+=i
+            //     }
+            //     i++
+            // }while(i<=100)
+            // console.log(sum)
+            // 使用do-while循环：输出询问“我爱你，嫁给我吧？”，选择“你喜欢我吗？(y/n):"，如果输入为y则打印”我们形影不离“，若输入为n,则继续询问
+           
+            // do {
+            //      var demo=prompt('我爱你,嫁给我吧?','你喜欢我吗?(yes/no)')
+            // }while(demo!="yes")
+            // alert('我们形影不离')
+            // 打印正方形
+            // var demo=""
+            // for(var j=0; j<10;j++){
+
+            // for (var i=0;i<10;i++){
+            //     demo+="x "
+              
+            // }  demo+="\n"
+            // }
+            // console.log (demo)
+            //打印三角形
+            // var demo="";
+            // for(var j=0;j<10;j++){
+            //     for (i=j;i>=0;i--){
+            //         demo+="x "
+            //     }demo+="\n"
+            // }console.log(demo)
+            var demo="";
+            for(var j=0;j<10;j++){
+                for (i=j;i<10;i++){
+                    demo+="x "
+                }demo+="\n"
+            }console.log(demo)
+            //打印乘法表
+            //  var demo="";
+            //  for (var i=1;i<10;i++){
+            //      for(var j=9;j>0;j--){
+            //          demo+=i+"*"+j+"="+i*j+"\t"
+            //      }demo+="\n"
+            //  }console.log(demo)
+            // for(var i = 1; i<=9; i++) {
+			// for(j = 1; j<10-i; j++) {
+			// 	// 一个&nbsp;占半个文字的位置
+			// 	document.write("&nbsp;");
+			// }
+			// for(j = 1; j<=i; j++) {
+			// 	document.write("★");
+			// }
+			// document.write("<br>");
+	    	// }
+           // 要求将数组中的0项去掉，将不为0的值存入一个新的数组，生成新的数组
+        //    var arrs=[];
+        //    var nums=[1,0,3,0,2,5,4,7,8,9,0,9]
+        //    for (var i=0;i<nums.length;i++){
+        //        if (nums[i]!==0){
+        //            arrs[arrs.length]=nums[i]
+        //        }
+        //    }console.log(arrs)
+        // 求一组数中的最大值和最小值，以及所在位置
+           
+            // var arrs=[12,53,84,24,35,46,9] 
+            // var big=arrs[0];
+            // var som=arrs[0];
+            // var bigs;
+            // var soms;
+            // for (var i=0;i<arrs.length;i++) {
+            //     if(arrs[i]>big){
+            //        big=arrs[i]; 
+            //        bigs=i
+            //     }else if (arrs[i]<som){
+            //         som=arrs[i]
+            //         soms=i
+            //     }
+            // }console.log (big,bigs)
+            // console.log(som,soms)       
+             // 将字符串数组用|或其他符号分割
+                // var sep="|"
+                // var nums=['丛金水','王俊豪','丛子超','丛金超']
+                // var str=nums[0]
+                // for(var i=1;i<nums.length;i++){
+                //     str=str+sep+nums[i]
+                // }console.log(str)
+        // 翻转数组
+        // var nums=[];
+        // var arrs=[1,2,3,4,5,6,7,8,9]
+        // for (var i=arrs.length-1;i>=0;i--) {
+        //      nums[nums.length]=arrs[i]
+        // }console.log (nums)
+            //冒泡排序
+            var nums=[78,45,12,65,35,98,55]
+            for (var i=0;i<nums.length;i++){
+                var scc=true;
+                for(var j=0;j<nums.length-i;j++){
+                    if(nums[j]>nums[j+1]){
+                        var scc=false;
+                        var gam=nums[j]
+                        nums[j]=nums[j+1]
+                        nums[j+1]=gam
+                    }
+                }if (scc) {
+                    break;
+                }
+            }    console.log (nums)    
+            // 等边三角形
+                // for (var i=1;i<=9;i++) {
+                //     for(var j=1;j<10-i;j++) {
+                //         document.write('&nbsp')
+                //     }
+                //     for(var j=1;j<=i;j++) {
+                //         document.write('X')
+                       
+                //     } document.write('<br>')
+                // }
+                // var num=prompt('请输入姓名')
+                // var money=0;
+                // var open=true
+                // while(open){
+                //     var demo=prompt(num+':请选择你要的操作\n'
+                //                 +'1. 存钱\n'
+                //                 +'2. 取钱\n'
+                //                 +'3. 查看余额\n'
+                //                 +'4. 退出')
+                //     switch(demo){
+                //         case '1':
+                //         var mon=parseInt(prompt('请输入存款金额'))
+                //         money+=mon
+                //         alert('存款成功,您的余额为:'+money)
+                //         break;
+                //         case '2':
+                //         var mon=parseInt(prompt('请输入取款金额'))
+                //         money-=mon
+                //         alert('取款成功,您的余额为:'+money)
+                //         break;
+                //         case '3':
+                //         alert('您的余额为:'+money)
+                //         break;
+                //         case '4':
+                //         alert('谢谢您的使用,欢迎下次光临!'+num)
+                //         open=false
+                //         break;
+
+
+
+                //     }            
+                                
+                                
+                // }
+                // var name=prompt('请输入用户名')
+                // var passWord=prompt('请输入密码')
+                // while(name!= 'admin'||passWord !='123'){
+                //    alert('输入密码或者账号错误')
+                //     name=prompt('请输入用户名')
+                //     passWord=prompt('请输入密码')
+                // }alert ('登录成功')
+    </script>   
+</body>
+</html>

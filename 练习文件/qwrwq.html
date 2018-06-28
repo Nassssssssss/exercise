@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>    
+        // 1. 写一个函数，实现对数字数组的排序。
+        // function getDemo(arr) {
+        //     for (var i=0;i<arr.length-1;i++) {
+        //         for (var j=0;j<arr.length-1-i;j++){
+        //             if (arr[j]>arr[j+1]){
+        //                 var num=arr[j];
+        //                 arr[j]=arr[j+1];
+        //                 arr[j+1]=num;
+        //             }
+        //         }
+        //     } return arr;
+        // }console.log(getDemo([9,8,7,6,5,4,3,2,1]))
+        // 2. 写一个函数，求任意两个不同数字的最大值，并能返回运算后的结果 
+        // function getDemo(x,y) {
+        //  return  x > y ? x : y
+        // }console.log(getDemo(8,6))
+        // 3. 写一个函数，实现任意数的阶乘，并返回值。（如：3的阶乘， 1x2x3）
+
+        // function getDemo(x){ 
+        // var num=1 
+        // for(var i=1;i<=5;i++){
+        //     num*=i
+        //     } return num
+        // }console.log(getDemo(5))
+
+        // 4. 写一个函数，判断一个数是否是素数，并返回结果true 或 false(又叫质数，只能被1和自身整数的数)  
+        // function getDemo(x){
+        //     for (var i=2;i<x;i++){
+        //         if (x % i ==0){
+        //          return false ;
+        //         }
+        //     }
+        //     return true;
+        // }
+        //  console.log(getDemo(5))                       
+
+        // 5. 写一个函数，计算任意两个数字的任意算术运算（简单的计算器小功能），并能返回运算后的结果。(x,y,ysf)
+        function getDemo(x, y, yef) {
+            var num = 0
+            switch (yef) {
+                case '+':
+                    num = x + y
+                    return num;
+                case '-':
+                    num = x - y
+                    return num;
+                case '*':
+                    num = x * y
+                    return num;
+                case '/':
+                    num = x / y
+                    return num;
+            }
+        } console.log(getDemo(10, 10, '*'))
+
+    </script>
+</body>
+
+</html>
